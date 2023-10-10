@@ -1,0 +1,1256 @@
+{
+    "meta": {
+        "include_test_products": false,
+        "limit": 50,
+        "start": 0,
+        "_endpoint": "/products"
+    },
+    "data": [
+        {
+            "id": "playstation-plus-spain",
+            "name": "PlayStation Plus Spain",
+            "country_code": "ES",
+            "country_name": "Spain",
+            "currency": "EUR",
+            "categories": [
+                "games"
+            ],
+            "created_time": "2019-12-06T10:12:26.109Z",
+            "recipient_type": "none",
+            "image": "playstation",
+            "in_stock": true,
+            "packages": [
+                {
+                    "id": "playstation-plus-spain<&>3 Months",
+                    "value": "3 Months",
+                    "price": 118371,
+                    "amount": 25
+                },
+                {
+                    "id": "playstation-plus-spain<&>12 Months",
+                    "value": "12 Months",
+                    "price": 283966,
+                    "amount": 60
+                }
+            ]
+        },
+        {
+            "id": "zalando-spain",
+            "name": "Zalando Spain",
+            "country_code": "ES",
+            "country_name": "Spain",
+            "currency": "EUR",
+            "categories": [
+                "ecommerce",
+                "apparel",
+                "health-beauty"
+            ],
+            "created_time": "2019-12-06T11:56:04.590Z",
+            "recipient_type": "none",
+            "image": "zalando",
+            "description": "Zalando es la plataforma online de moda más grande de Europa. Desde zapatos y ropa a complementos y prendas deportivas, Zalando propone opciones para todos los gustos. Exprésate a través de la moda, crea un look único combinando tus marcas streetwear favoritas con propuestas Premium y firmas independientes, las posibilidades son infinitas. Pero eso no es todo, Zalando ofrece envíos y devoluciones gratuitos en todos y cada uno de sus artículos. Y si cambias de opinión sobre tu pedido, ¡no pasa nada! Puedes devolver los artículos sin usar de manera gratuita en un plazo de 100 días desde que haces el pedido. Para más inspiración, ideas de estilo y nuevas tendencias, visita zalando.es.",
+            "termsAndConditions": "<br>  \t\tZalando is the largest online store in Europe. Find the perfect look in an easy and comfortable way Enjoy the latest trends of the season, the style tips of our fashion experts and your favorite brands, all the inspiration you need in one place: visit zalando.es or download our app for free. How to redeem my Zalando Gift Card  \t<br>  \t\tChoose the article that you like among the more than 1500 brands that we have.  \t<br>  \t\tLog in to zalando.es or in the Zalando app and click on \"My account\". Enter \"My balance and my gift cards\" and enter the card code. The amount will be credited to your Zalando balance. You can also enter your card code simply during the purchase process in the box \"Do you have a discount voucher or gift card\". The amount of the card will be subtracted from the total price of your purchase automatically. If you do not exchange the total amount of the card, we will transfer the remaining amount to the balance of your user account (\"My balance and my gift cards\"). The codes can not be exchanged once the order is finalized. Cards are excluded from any exchange or refund.  \t<br>  \t\tGift voucher will be delivered within 5 to 6 working days",
+            "in_stock": true,
+            "range": {
+                "min": 1,
+                "max": 1000,
+                "step": 0.01,
+                "price_rate": 1
+            },
+            "packages": [
+                {
+                    "id": "zalando-spain<&>1",
+                    "value": "1",
+                    "price": 4718
+                },
+                {
+                    "id": "zalando-spain<&>2",
+                    "value": "2",
+                    "price": 9436
+                },
+                {
+                    "id": "zalando-spain<&>5",
+                    "value": "5",
+                    "price": 23590
+                },
+                {
+                    "id": "zalando-spain<&>10",
+                    "value": "10",
+                    "price": 47179
+                },
+                {
+                    "id": "zalando-spain<&>20",
+                    "value": "20",
+                    "price": 94357
+                },
+                {
+                    "id": "zalando-spain<&>50",
+                    "value": "50",
+                    "price": 235892
+                },
+                {
+                    "id": "zalando-spain<&>100",
+                    "value": "100",
+                    "price": 471783
+                },
+                {
+                    "id": "zalando-spain<&>200",
+                    "value": "200",
+                    "price": 943566
+                },
+                {
+                    "id": "zalando-spain<&>300",
+                    "value": "300",
+                    "price": 1415349
+                },
+                {
+                    "id": "zalando-spain<&>400",
+                    "value": "400",
+                    "price": 1887131
+                },
+                {
+                    "id": "zalando-spain<&>500",
+                    "value": "500",
+                    "price": 2358914
+                },
+                {
+                    "id": "zalando-spain<&>600",
+                    "value": "600",
+                    "price": 2830697
+                },
+                {
+                    "id": "zalando-spain<&>700",
+                    "value": "700",
+                    "price": 3302479
+                },
+                {
+                    "id": "zalando-spain<&>800",
+                    "value": "800",
+                    "price": 3774262
+                },
+                {
+                    "id": "zalando-spain<&>900",
+                    "value": "900",
+                    "price": 4246045
+                },
+                {
+                    "id": "zalando-spain<&>1000",
+                    "value": "1000",
+                    "price": 4717827
+                }
+            ]
+        },
+        {
+            "id": "google-play-spain",
+            "name": "Google Play Spain",
+            "country_code": "ES",
+            "country_name": "Spain",
+            "currency": "EUR",
+            "categories": [
+                "ecommerce",
+                "games",
+                "entertainment"
+            ],
+            "created_time": "2020-09-11T18:46:22.324Z",
+            "recipient_type": "none",
+            "image": "google-play-updated",
+            "in_stock": true,
+            "range": {
+                "min": 2,
+                "max": 250,
+                "step": 1,
+                "price_rate": 1.035
+            },
+            "packages": [
+                {
+                    "id": "google-play-spain<&>2",
+                    "value": "2",
+                    "price": 9766
+                },
+                {
+                    "id": "google-play-spain<&>5",
+                    "value": "5",
+                    "price": 24415
+                },
+                {
+                    "id": "google-play-spain<&>10",
+                    "value": "10",
+                    "price": 48830
+                },
+                {
+                    "id": "google-play-spain<&>20",
+                    "value": "20",
+                    "price": 97660
+                },
+                {
+                    "id": "google-play-spain<&>40",
+                    "value": "40",
+                    "price": 195319
+                },
+                {
+                    "id": "google-play-spain<&>60",
+                    "value": "60",
+                    "price": 292978
+                },
+                {
+                    "id": "google-play-spain<&>80",
+                    "value": "80",
+                    "price": 390637
+                },
+                {
+                    "id": "google-play-spain<&>100",
+                    "value": "100",
+                    "price": 488296
+                },
+                {
+                    "id": "google-play-spain<&>120",
+                    "value": "120",
+                    "price": 585955
+                },
+                {
+                    "id": "google-play-spain<&>140",
+                    "value": "140",
+                    "price": 683614
+                },
+                {
+                    "id": "google-play-spain<&>160",
+                    "value": "160",
+                    "price": 781273
+                },
+                {
+                    "id": "google-play-spain<&>180",
+                    "value": "180",
+                    "price": 878932
+                },
+                {
+                    "id": "google-play-spain<&>200",
+                    "value": "200",
+                    "price": 976591
+                },
+                {
+                    "id": "google-play-spain<&>220",
+                    "value": "220",
+                    "price": 1074250
+                },
+                {
+                    "id": "google-play-spain<&>240",
+                    "value": "240",
+                    "price": 1171909
+                }
+            ]
+        },
+        {
+            "id": "handm-france",
+            "name": "H&M France",
+            "country_code": "FR",
+            "country_name": "France",
+            "currency": "EUR",
+            "categories": [
+                "ecommerce",
+                "retail",
+                "apparel",
+                "health-beauty"
+            ],
+            "created_time": "2020-06-30T13:00:11.649Z",
+            "recipient_type": "none",
+            "image": "h_and_m_new",
+            "description": "H & M Hennes & Mauritz AB a été fondée en Suède, en 1947 et est cotée en Bourse à Stockholm. Le concept commercial de l’entreprise est d’offrir aux clients « Mode et qualité au meilleur prix, de manière durable ». En plus de la marque H&M, le Groupe comprend les marques H&M HOME, COS, Weekday, Monki, & Other Stories, ARKET, Afound et Sellpy. Le Groupe compte plus de 5000 magasins répartis dans 74 marchés, incluant les franchises, et 51 marchés de vente en ligne. En 2019, le Groupe H&M compte environ 179 000 collaborateurs et a réalisé un chiffre d’affaires de 233 milliards de couronnes suédoises (SEK).",
+            "termsAndConditions": "Pour les conditions générales complètes, visitez https://www2.hm.com/fr_fr/service-clients/gift-card/terms---conditions.html.     For full Terms and Conditions visit https://www2.hm.com/fr_fr/service-clients/gift-card/terms---conditions.html.",
+            "in_stock": true,
+            "range": {
+                "min": 10,
+                "max": 500,
+                "step": 0.01,
+                "price_rate": 1
+            },
+            "packages": [
+                {
+                    "id": "handm-france<&>10",
+                    "value": "10",
+                    "price": 47179
+                },
+                {
+                    "id": "handm-france<&>20",
+                    "value": "20",
+                    "price": 94357
+                },
+                {
+                    "id": "handm-france<&>50",
+                    "value": "50",
+                    "price": 235892
+                },
+                {
+                    "id": "handm-france<&>100",
+                    "value": "100",
+                    "price": 471783
+                },
+                {
+                    "id": "handm-france<&>150",
+                    "value": "150",
+                    "price": 707675
+                },
+                {
+                    "id": "handm-france<&>200",
+                    "value": "200",
+                    "price": 943566
+                },
+                {
+                    "id": "handm-france<&>250",
+                    "value": "250",
+                    "price": 1179457
+                },
+                {
+                    "id": "handm-france<&>300",
+                    "value": "300",
+                    "price": 1415349
+                },
+                {
+                    "id": "handm-france<&>350",
+                    "value": "350",
+                    "price": 1651240
+                },
+                {
+                    "id": "handm-france<&>400",
+                    "value": "400",
+                    "price": 1887131
+                },
+                {
+                    "id": "handm-france<&>450",
+                    "value": "450",
+                    "price": 2123023
+                },
+                {
+                    "id": "handm-france<&>500",
+                    "value": "500",
+                    "price": 2358914
+                }
+            ]
+        },
+        {
+            "id": "handm-spain",
+            "name": "H&M Spain",
+            "country_code": "ES",
+            "country_name": "Spain",
+            "currency": "EUR",
+            "categories": [
+                "ecommerce",
+                "retail",
+                "apparel",
+                "health-beauty"
+            ],
+            "created_time": "2020-07-01T13:27:43.422Z",
+            "recipient_type": "none",
+            "image": "h_and_m_new",
+            "description": "H&M es una marca de moda, que ofrece los últimos estilos y la inspiración para todos/as. Los clientes encontrarán las colecciones de mujer, hombre, línea infantil, juvenil, sport y lo último en lencería y accesorios. Pero H&M es más que moda. Con el precio, la calidad y la sostenibilidad profundamente arraigados en su ADN, H&M no sólo es una posibilidad para que todo el mundo explore su estilo personal, sino que también ofrece la posibilidad de crear un futuro de la moda más sostenible.  Visita hm.com para más información o sigue @HM para inspirarte todos los días.",
+            "termsAndConditions": "Para ver los Términos y Condiciones completos, visite https://www2.hm.com/es_es/customer-service/gift-card/terms---conditions.htmlFor full Terms and Conditions visit https://www2.hm.com/es_es/customer-service/gift-card/terms---conditions.html",
+            "in_stock": true,
+            "range": {
+                "min": 10,
+                "max": 300,
+                "step": 0.01,
+                "price_rate": 1
+            },
+            "packages": [
+                {
+                    "id": "handm-spain<&>10",
+                    "value": "10",
+                    "price": 47179
+                },
+                {
+                    "id": "handm-spain<&>20",
+                    "value": "20",
+                    "price": 94357
+                },
+                {
+                    "id": "handm-spain<&>40",
+                    "value": "40",
+                    "price": 188714
+                },
+                {
+                    "id": "handm-spain<&>60",
+                    "value": "60",
+                    "price": 283070
+                },
+                {
+                    "id": "handm-spain<&>80",
+                    "value": "80",
+                    "price": 377427
+                },
+                {
+                    "id": "handm-spain<&>100",
+                    "value": "100",
+                    "price": 471783
+                },
+                {
+                    "id": "handm-spain<&>120",
+                    "value": "120",
+                    "price": 566140
+                },
+                {
+                    "id": "handm-spain<&>140",
+                    "value": "140",
+                    "price": 660496
+                },
+                {
+                    "id": "handm-spain<&>160",
+                    "value": "160",
+                    "price": 754853
+                },
+                {
+                    "id": "handm-spain<&>180",
+                    "value": "180",
+                    "price": 849209
+                },
+                {
+                    "id": "handm-spain<&>200",
+                    "value": "200",
+                    "price": 943566
+                },
+                {
+                    "id": "handm-spain<&>220",
+                    "value": "220",
+                    "price": 1037922
+                },
+                {
+                    "id": "handm-spain<&>240",
+                    "value": "240",
+                    "price": 1132279
+                },
+                {
+                    "id": "handm-spain<&>260",
+                    "value": "260",
+                    "price": 1226635
+                },
+                {
+                    "id": "handm-spain<&>280",
+                    "value": "280",
+                    "price": 1320992
+                },
+                {
+                    "id": "handm-spain<&>300",
+                    "value": "300",
+                    "price": 1415349
+                }
+            ]
+        },
+        {
+            "id": "playstation-france",
+            "name": "PlayStation France",
+            "country_code": "FR",
+            "country_name": "France",
+            "currency": "EUR",
+            "categories": [
+                "games"
+            ],
+            "created_time": "2021-06-23T22:11:32.434Z",
+            "recipient_type": "none",
+            "image": "psn",
+            "description": "A Playstation Store card allows you to recharge your Playstation Store wallet without having to provide your bank and personal details. Use your credit on the Playstation Store by downloading the best games, extensions, avatars, themes, movies, music and series on your console.<br>  <br>  It also allows you to play online by turning it into a Playstation Plus subscription!<br>  <br>  Playstation Store cards are cumulative and can only be exchanged for credit once for the full value. These tickets allow you to download Sony games for Playstation, PS3, PS4 and PSVita consoles.",
+            "termsAndConditions": "Une carte Playstation Store vous permet de recharger votre portefeuille Playstation Store sans avoir à fournir votre banque et vos coordonnées personnelles. Utilisez votre crédit sur le Playstation Store en téléchargeant les meilleurs jeux, extensions, avatars, thèmes, films, musiques et séries sur votre console.    Il vous permet également de jouer en ligne en le transformant en abonnement Playstation Plus!    Les cartes Playstation Store sont cumulatives et ne peuvent être échangées contre un crédit qu'une seule fois pour la valeur totale. Ces tickets vous permettent de télécharger des jeux Sony pour les consoles Playstation, PS3, PS4 et PSVita.         A Playstation Store card allows you to recharge your Playstation Store wallet without having to provide your bank and personal details. Use your credit on the Playstation Store by downloading the best games, extensions, avatars, themes, movies, music and series on your console.<br>  <br>  It also allows you to play online by turning it into a Playstation Plus subscription!<br>  <br>  Playstation Store cards are cumulative and can only be exchanged for credit once for the full value. These tickets allow you to download Sony games for Playstation, PS3, PS4 and PSVita consoles.",
+            "in_stock": true,
+            "packages": [
+                {
+                    "id": "playstation-france<&>5",
+                    "value": "5",
+                    "price": 23590,
+                    "amount": 5
+                },
+                {
+                    "id": "playstation-france<&>10",
+                    "value": "10",
+                    "price": 47179,
+                    "amount": 10
+                },
+                {
+                    "id": "playstation-france<&>15",
+                    "value": "15",
+                    "price": 70768,
+                    "amount": 15
+                },
+                {
+                    "id": "playstation-france<&>20",
+                    "value": "20",
+                    "price": 94357,
+                    "amount": 20
+                },
+                {
+                    "id": "playstation-france<&>25",
+                    "value": "25",
+                    "price": 117946,
+                    "amount": 25
+                },
+                {
+                    "id": "playstation-france<&>30",
+                    "value": "30",
+                    "price": 141535,
+                    "amount": 30
+                },
+                {
+                    "id": "playstation-france<&>35",
+                    "value": "35",
+                    "price": 165124,
+                    "amount": 35
+                },
+                {
+                    "id": "playstation-france<&>40",
+                    "value": "40",
+                    "price": 188714,
+                    "amount": 40
+                },
+                {
+                    "id": "playstation-france<&>50",
+                    "value": "50",
+                    "price": 235892,
+                    "amount": 50
+                },
+                {
+                    "id": "playstation-france<&>60",
+                    "value": "60",
+                    "price": 283070,
+                    "amount": 60
+                },
+                {
+                    "id": "playstation-france<&>75",
+                    "value": "75",
+                    "price": 353838,
+                    "amount": 75
+                },
+                {
+                    "id": "playstation-france<&>100",
+                    "value": "100",
+                    "price": 471783,
+                    "amount": 100
+                },
+                {
+                    "id": "playstation-france<&>120",
+                    "value": "120",
+                    "price": 566140,
+                    "amount": 120
+                }
+            ]
+        },
+        {
+            "id": "adidas-es",
+            "name": "Adidas Spain",
+            "country_code": "ES",
+            "country_name": "Spain",
+            "currency": "EUR",
+            "categories": [
+                "ecommerce",
+                "retail",
+                "apparel"
+            ],
+            "created_time": "2020-07-16T17:45:41.894Z",
+            "recipient_type": "none",
+            "image": "adidas",
+            "in_stock": true,
+            "range": {
+                "min": 5,
+                "max": 500,
+                "step": 0.01,
+                "price_rate": 1
+            },
+            "packages": [
+                {
+                    "id": "adidas-es<&>5",
+                    "value": "5",
+                    "price": 24526
+                },
+                {
+                    "id": "adidas-es<&>10",
+                    "value": "10",
+                    "price": 48115
+                },
+                {
+                    "id": "adidas-es<&>20",
+                    "value": "20",
+                    "price": 95294
+                },
+                {
+                    "id": "adidas-es<&>50",
+                    "value": "50",
+                    "price": 236828
+                },
+                {
+                    "id": "adidas-es<&>100",
+                    "value": "100",
+                    "price": 472720
+                },
+                {
+                    "id": "adidas-es<&>150",
+                    "value": "150",
+                    "price": 708611
+                },
+                {
+                    "id": "adidas-es<&>200",
+                    "value": "200",
+                    "price": 944502
+                },
+                {
+                    "id": "adidas-es<&>250",
+                    "value": "250",
+                    "price": 1180394
+                },
+                {
+                    "id": "adidas-es<&>300",
+                    "value": "300",
+                    "price": 1416285
+                },
+                {
+                    "id": "adidas-es<&>350",
+                    "value": "350",
+                    "price": 1652176
+                },
+                {
+                    "id": "adidas-es<&>400",
+                    "value": "400",
+                    "price": 1888068
+                },
+                {
+                    "id": "adidas-es<&>450",
+                    "value": "450",
+                    "price": 2123959
+                },
+                {
+                    "id": "adidas-es<&>500",
+                    "value": "500",
+                    "price": 2359850
+                }
+            ]
+        },
+        {
+            "id": "decathlon-es",
+            "name": "Decathlon Spain",
+            "country_code": "ES",
+            "country_name": "Spain",
+            "currency": "EUR",
+            "categories": [
+                "ecommerce",
+                "retail",
+                "apparel"
+            ],
+            "created_time": "2020-07-30T18:57:22.744Z",
+            "recipient_type": "none",
+            "image": "decathlon",
+            "description": "Decathlon è una catena di negozi di grandi dimensioni dedicata alla vendita e alla distribuzione di attrezzature sportive.",
+            "termsAndConditions": "Note:Voucher codes will be delivered within 5 to 6 working days.     \tVouchers can be accumulated and spent in multiple solutions.    \tGift vouchers validity can not be extended once expired.",
+            "in_stock": true,
+            "packages": [
+                {
+                    "id": "decathlon-es<&>5",
+                    "value": "5",
+                    "price": 25333,
+                    "amount": 5
+                },
+                {
+                    "id": "decathlon-es<&>10",
+                    "value": "10",
+                    "price": 49729,
+                    "amount": 10
+                },
+                {
+                    "id": "decathlon-es<&>20",
+                    "value": "20",
+                    "price": 98522,
+                    "amount": 20
+                },
+                {
+                    "id": "decathlon-es<&>25",
+                    "value": "25",
+                    "price": 122918,
+                    "amount": 25
+                },
+                {
+                    "id": "decathlon-es<&>50",
+                    "value": "50",
+                    "price": 244899,
+                    "amount": 50
+                },
+                {
+                    "id": "decathlon-es<&>100",
+                    "value": "100",
+                    "price": 488860,
+                    "amount": 100
+                },
+                {
+                    "id": "decathlon-es<&>200",
+                    "value": "200",
+                    "price": 976784,
+                    "amount": 200
+                }
+            ]
+        },
+        {
+            "id": "carrefour-es",
+            "name": "Carrefour Spain",
+            "country_code": "ES",
+            "country_name": "Spain",
+            "currency": "EUR",
+            "categories": [
+                "food",
+                "retail",
+                "health-beauty",
+                "home",
+                "electronics",
+                "apparel",
+                "pets",
+                "groceries"
+            ],
+            "created_time": "2020-08-04T11:53:56.178Z",
+            "recipient_type": "none",
+            "image": "carrefour-france",
+            "description": "Carrefour es una cadena multinacional de distribución de origen francés. Es considerado el primer grupo europeo y en España cuenta con más de 200 hipermercados, más de 100 supermercados Carrefour Market, más de 800 supermercados Carrefour Express, más de 140 Estaciones de servicio y más de 400 agencias de viaje.",
+            "termsAndConditions": "INFORMACIÓN SOBRE TU TARJETA REGALO CARREFOUR:  Tarjeta para adquirir productos en cualquiera de los hipermercados y supermercados Carrefour radicados en España contra el saldo previamente cargado. Las compras realizadas reducirán el mismo importe del saldo disponible en la Tarjeta. En caso de pérdida o robo de la tarjeta no será reemplazada por otra nueva, ni restituido el saldo no dispuesto. Agotado su saldo, la Tarjeta pasará a ser propiedad de Carrefour. El saldo disponible y las compras realizadas, puede ser comprobadas llamando a Atención al Cliente (914 908 900) o en cualquiera de los hipermercados Carrefour. Tarjeta no canjeable por dinero. La Tarjeta Regalo Carrefour no podrá ser utilizada publicitariamente por terceros para fines promocionales, sin la autorización expresa de centros Comerciales Carrefour, S.A. Contacta con nosotros: 914 908 900 e Lunes a Domingo de 9:00h. a 22:00h. o escribenos a clientes_carrefour.es@carrefour.com",
+            "in_stock": true,
+            "packages": [
+                {
+                    "id": "carrefour-es<&>5",
+                    "value": "5",
+                    "price": 23590,
+                    "amount": 5
+                },
+                {
+                    "id": "carrefour-es<&>10",
+                    "value": "10",
+                    "price": 47179,
+                    "amount": 10
+                },
+                {
+                    "id": "carrefour-es<&>20",
+                    "value": "20",
+                    "price": 94357,
+                    "amount": 20
+                },
+                {
+                    "id": "carrefour-es<&>25",
+                    "value": "25",
+                    "price": 117946,
+                    "amount": 25
+                },
+                {
+                    "id": "carrefour-es<&>50",
+                    "value": "50",
+                    "price": 235892,
+                    "amount": 50
+                },
+                {
+                    "id": "carrefour-es<&>100",
+                    "value": "100",
+                    "price": 471783,
+                    "amount": 100
+                }
+            ]
+        },
+        {
+            "id": "netflix-spain",
+            "name": "Netflix Spain",
+            "country_code": "ES",
+            "country_name": "Spain",
+            "currency": "EUR",
+            "categories": [
+                "entertainment",
+                "streaming"
+            ],
+            "created_time": "2020-12-25T02:14:22.450Z",
+            "recipient_type": "none",
+            "image": "netflix",
+            "in_stock": true,
+            "range": {
+                "min": 25,
+                "max": 150,
+                "step": 0.01,
+                "price_rate": 1.0128469387755101
+            },
+            "packages": [
+                {
+                    "id": "netflix-spain<&>50",
+                    "value": "50",
+                    "price": 238922
+                },
+                {
+                    "id": "netflix-spain<&>100",
+                    "value": "100",
+                    "price": 477844
+                },
+                {
+                    "id": "netflix-spain<&>150",
+                    "value": "150",
+                    "price": 716766
+                }
+            ]
+        },
+        {
+            "id": "deliveroo-france",
+            "name": "Deliveroo France",
+            "country_code": "FR",
+            "country_name": "France",
+            "currency": "EUR",
+            "categories": [
+                "food",
+                "restaurants"
+            ],
+            "created_time": "2021-01-04T19:35:29.110Z",
+            "recipient_type": "none",
+            "image": "deliveroo",
+            "description": "Deliveroo vous donne accès à une sélection inégalée des meilleurs restaurants de votre quartier. C'est le moment de vous faire plaisir, que ce soit en prenant votre petit déjeuner au lit ou en organisant un repas pour une réunion de travail virtuelle avec l'équipe. Peut-être s'agit-il de faire passer votre déjeuner au niveau supérieur ou de transformer votre dîner en moment inoubliable ? Quel que soit le besoin, nous avons ce qu'il vous faut.",
+            "termsAndConditions": "1. Deliveroo is an online store.  <br>  \t2. This eGift Card will be activated within 48 hours from the time of purchase.   <br>  \t3. This eGift card will be applicable only on prepaid orders and will be valid from 6 months from point of purchase  <br>  \t4. Any unused credit will remain on the Deliveroo account, until the expiry date  <br>  \t5. If you have more than one eligible Voucher applied to your account when you place an order, the Vouchers are redeemed in order of expiry date, with the Voucher expiring the earliest redeemed first.  <br>  \t6. In case the order amount is more than the value contained in the eGift code the balance amount can be paid through other payment methods.  <br>  \t7. This eGift will be applicable only when the order is placed online through the Deliveroo app or website.  <br>  \t8. Voucher usage is subject to additional terms and conditions, which can be found at https://deliveroo.fr/fr/ for purchases.",
+            "in_stock": true,
+            "packages": [
+                {
+                    "id": "deliveroo-france<&>15",
+                    "value": "15",
+                    "price": 70768,
+                    "amount": 15
+                },
+                {
+                    "id": "deliveroo-france<&>30",
+                    "value": "30",
+                    "price": 141535,
+                    "amount": 30
+                },
+                {
+                    "id": "deliveroo-france<&>50",
+                    "value": "50",
+                    "price": 235892,
+                    "amount": 50
+                }
+            ]
+        },
+        {
+            "id": "calzedonia-spain",
+            "name": "Calzedonia Spain",
+            "country_code": "ES",
+            "country_name": "Spain",
+            "currency": "EUR",
+            "categories": [
+                "ecommerce"
+            ],
+            "created_time": "2021-07-28T15:56:30.349Z",
+            "recipient_type": "none",
+            "image": "calzedonia",
+            "description": "Since 1986, Calzedonia has unveiled the most innovative hosiery and beachwear trends in its every collection, combining production quality, style and accessible prices. Brand DNA ensures products that are innovative in their functionality, style and performance.    <br>  \t<br>The Gift Card is immediately activated and is associated with the email assigned to it  \t<br>You can use your Gift Card on-line or in participating Calzedonia stores  \t<br>You can spread the sum total of your Gift Card across several purchases (both on- and off-line)  \t<br>The Gift Card is valid for 3 years from the date of purchase. For more information, view the full terms and conditions at https://www.calzedonia.com/es/giftcard/",
+            "in_stock": true,
+            "packages": [
+                {
+                    "id": "calzedonia-spain<&>30",
+                    "value": "30",
+                    "price": 141535,
+                    "amount": 30
+                },
+                {
+                    "id": "calzedonia-spain<&>50",
+                    "value": "50",
+                    "price": 235892,
+                    "amount": 50
+                },
+                {
+                    "id": "calzedonia-spain<&>70",
+                    "value": "70",
+                    "price": 330248,
+                    "amount": 70
+                },
+                {
+                    "id": "calzedonia-spain<&>100",
+                    "value": "100",
+                    "price": 471783,
+                    "amount": 100
+                }
+            ]
+        },
+        {
+            "id": "gemo-fr",
+            "name": "GEMO FR",
+            "country_code": "FR",
+            "country_name": "France",
+            "currency": "EUR",
+            "categories": [
+                "ecommerce",
+                "retail",
+                "apparel"
+            ],
+            "created_time": "2021-08-06T21:56:47.488Z",
+            "recipient_type": "none",
+            "image": "gemo-fr",
+            "in_stock": true,
+            "packages": [
+                {
+                    "id": "gemo-fr<&>10",
+                    "value": "10",
+                    "price": 47179,
+                    "amount": 10
+                },
+                {
+                    "id": "gemo-fr<&>25",
+                    "value": "25",
+                    "price": 117946,
+                    "amount": 25
+                },
+                {
+                    "id": "gemo-fr<&>100",
+                    "value": "100",
+                    "price": 471783,
+                    "amount": 100
+                }
+            ]
+        },
+        {
+            "id": "castorama-fr",
+            "name": "Castorama France",
+            "country_code": "FR",
+            "country_name": "France",
+            "currency": "EUR",
+            "categories": [
+                "retail"
+            ],
+            "created_time": "2021-10-07T01:17:08.192Z",
+            "recipient_type": "none",
+            "image": "castorama",
+            "in_stock": true,
+            "packages": [
+                {
+                    "id": "castorama-fr<&>10",
+                    "value": "10",
+                    "price": 47338,
+                    "amount": 10
+                },
+                {
+                    "id": "castorama-fr<&>15",
+                    "value": "15",
+                    "price": 70768,
+                    "amount": 15
+                },
+                {
+                    "id": "castorama-fr<&>30",
+                    "value": "30",
+                    "price": 141535,
+                    "amount": 30
+                },
+                {
+                    "id": "castorama-fr<&>50",
+                    "value": "50",
+                    "price": 235892,
+                    "amount": 50
+                },
+                {
+                    "id": "castorama-fr<&>100",
+                    "value": "100",
+                    "price": 471783,
+                    "amount": 100
+                }
+            ]
+        },
+        {
+            "id": "twitch-spain",
+            "name": "Twitch Spain",
+            "country_code": "ES",
+            "country_name": "Spain",
+            "currency": "EUR",
+            "categories": [
+                "games",
+                "streaming"
+            ],
+            "created_time": "2021-11-04T14:07:12.537Z",
+            "recipient_type": "none",
+            "image": "twitch_usa",
+            "in_stock": true,
+            "range": {
+                "min": 15,
+                "max": 150,
+                "step": 0.01,
+                "price_rate": 1
+            },
+            "packages": [
+                {
+                    "id": "twitch-spain<&>20",
+                    "value": "20",
+                    "price": 94357
+                },
+                {
+                    "id": "twitch-spain<&>40",
+                    "value": "40",
+                    "price": 188714
+                },
+                {
+                    "id": "twitch-spain<&>60",
+                    "value": "60",
+                    "price": 283070
+                },
+                {
+                    "id": "twitch-spain<&>80",
+                    "value": "80",
+                    "price": 377427
+                },
+                {
+                    "id": "twitch-spain<&>100",
+                    "value": "100",
+                    "price": 471783
+                },
+                {
+                    "id": "twitch-spain<&>120",
+                    "value": "120",
+                    "price": 566140
+                },
+                {
+                    "id": "twitch-spain<&>140",
+                    "value": "140",
+                    "price": 660496
+                }
+            ]
+        },
+        {
+            "id": "airbnb-spain",
+            "name": "Airbnb Spain",
+            "country_code": "ES",
+            "country_name": "Spain",
+            "currency": "EUR",
+            "categories": [
+                "travel",
+                "experiences"
+            ],
+            "created_time": "2021-12-15T14:11:25.611Z",
+            "recipient_type": "none",
+            "image": "airbnb_latest",
+            "description": "Regala Airbnb. Alloggi unici e attività fantastiche in tutto il mondo.",
+            "termsAndConditions": "Card balance does not expire.  \t<br>  \t\tNo fees apply to purchase or activate this Card.  \t<br>  \t\tRedeemable by UK residents towards the purchase of eligible goods and services on the Airbnb website and app. Use requires an Airbnb account.  \t<br>  \t\tCard is non-reloadable and, except where required by law, cannot be redeemed for cash, refunded, returned, or resold.  \t<br>  \t\tIssuer is not responsible for lost, damaged, or stolen cards, or for unauthorised use. View Card balance by signing in to your Airbnb account. Issued by Airbnb Ireland UC.  \t<br>  \t\tTerms apply, see airbnb.co.uk/terms/uk_gift_cards.",
+            "in_stock": true,
+            "range": {
+                "min": 50,
+                "max": 500,
+                "step": 0.01,
+                "price_rate": 1
+            },
+            "packages": [
+                {
+                    "id": "airbnb-spain<&>50",
+                    "value": "50",
+                    "price": 235892
+                },
+                {
+                    "id": "airbnb-spain<&>100",
+                    "value": "100",
+                    "price": 471783
+                },
+                {
+                    "id": "airbnb-spain<&>150",
+                    "value": "150",
+                    "price": 707675
+                },
+                {
+                    "id": "airbnb-spain<&>200",
+                    "value": "200",
+                    "price": 943566
+                },
+                {
+                    "id": "airbnb-spain<&>250",
+                    "value": "250",
+                    "price": 1179457
+                },
+                {
+                    "id": "airbnb-spain<&>300",
+                    "value": "300",
+                    "price": 1415349
+                },
+                {
+                    "id": "airbnb-spain<&>350",
+                    "value": "350",
+                    "price": 1651240
+                },
+                {
+                    "id": "airbnb-spain<&>400",
+                    "value": "400",
+                    "price": 1887131
+                },
+                {
+                    "id": "airbnb-spain<&>450",
+                    "value": "450",
+                    "price": 2123023
+                },
+                {
+                    "id": "airbnb-spain<&>500",
+                    "value": "500",
+                    "price": 2358914
+                }
+            ]
+        },
+        {
+            "id": "hotelsgift-es",
+            "name": "HotelsGift Spain",
+            "country_code": "ES",
+            "country_name": "Spain",
+            "currency": "EUR",
+            "categories": [
+                "travel"
+            ],
+            "created_time": "2022-01-14T02:12:36.942Z",
+            "recipient_type": "none",
+            "image": "hotelsgift-uk",
+            "in_stock": true,
+            "range": {
+                "min": 100,
+                "max": 2000,
+                "step": 0.01,
+                "price_rate": 1
+            },
+            "packages": [
+                {
+                    "id": "hotelsgift-es<&>100",
+                    "value": "100",
+                    "price": 472720
+                },
+                {
+                    "id": "hotelsgift-es<&>200",
+                    "value": "200",
+                    "price": 944502
+                },
+                {
+                    "id": "hotelsgift-es<&>500",
+                    "value": "500",
+                    "price": 2359850
+                },
+                {
+                    "id": "hotelsgift-es<&>1000",
+                    "value": "1000",
+                    "price": 4718764
+                },
+                {
+                    "id": "hotelsgift-es<&>1500",
+                    "value": "1500",
+                    "price": 7077677
+                },
+                {
+                    "id": "hotelsgift-es<&>2000",
+                    "value": "2000",
+                    "price": 9436591
+                }
+            ]
+        },
+        {
+            "id": "xbox-france",
+            "name": "Xbox France",
+            "country_code": "FR",
+            "country_name": "France",
+            "currency": "EUR",
+            "categories": [
+                "games"
+            ],
+            "created_time": "2022-02-08T14:23:06.871Z",
+            "recipient_type": "none",
+            "image": "xbox",
+            "description": "Avec une carte cadeau Xbox, donnez-leur la liberté de choisir un cadeau à leur goût. Celle-ci peut être utilisée pour acheter les meilleures versions complètes de jeu Xbox à télécharger, des applications, des films, des séries, des appareils, et bien plus encore.",
+            "termsAndConditions": "Conditions d'utilisation: https://www.xbox.com/fr-fr/Legal/XboxComTOU?source=lp Conditions générales de vente: https://www.microsoft.com/fr-fr/storedocs/terms-of-sale?rtc=1&source=lp",
+            "in_stock": true,
+            "packages": [
+                {
+                    "id": "xbox-france<&>25",
+                    "value": "25",
+                    "price": 117946,
+                    "amount": 25
+                },
+                {
+                    "id": "xbox-france<&>50",
+                    "value": "50",
+                    "price": 235892,
+                    "amount": 50
+                },
+                {
+                    "id": "xbox-france<&>100",
+                    "value": "100",
+                    "price": 471783,
+                    "amount": 100
+                }
+            ]
+        },
+        {
+            "id": "xbox-spain",
+            "name": "Xbox Spain",
+            "country_code": "ES",
+            "country_name": "Spain",
+            "currency": "EUR",
+            "categories": [
+                "games"
+            ],
+            "created_time": "2022-02-17T14:14:07.145Z",
+            "recipient_type": "none",
+            "image": "xbox",
+            "in_stock": true,
+            "packages": [
+                {
+                    "id": "xbox-spain<&>10",
+                    "value": "10",
+                    "price": 47179,
+                    "amount": 10
+                },
+                {
+                    "id": "xbox-spain<&>25",
+                    "value": "25",
+                    "price": 117946,
+                    "amount": 25
+                },
+                {
+                    "id": "xbox-spain<&>50",
+                    "value": "50",
+                    "price": 235892,
+                    "amount": 50
+                },
+                {
+                    "id": "xbox-spain<&>100",
+                    "value": "100",
+                    "price": 471783,
+                    "amount": 100
+                }
+            ]
+        },
+        {
+            "id": "zara-spain",
+            "name": "Zara Spain",
+            "country_code": "ES",
+            "country_name": "Spain",
+            "currency": "EUR",
+            "categories": [
+                "ecommerce",
+                "retail",
+                "gifts",
+                "apparel",
+                "home"
+            ],
+            "created_time": "2022-03-17T13:37:58.462Z",
+            "recipient_type": "none",
+            "image": "zara-spain",
+            "description": "Discover the new ZARA collection with the latest fashion trends.    The Gift Card is valid in shops and websites of the Inditex Group in Spain: Zara, Pull&Bear, Massimo Dutti, Bershka, Stradivarius, Oysho, Zara Home, Lefties and Uterqüe; and in Kiddy's Class shops (the Establishments).",
+            "termsAndConditions": "For terms & condition refer to https://static.zara.net/static/pdfs/ES/giftcard-conditions/giftcard-conditions-en_ES-20220301.pdf",
+            "in_stock": true,
+            "packages": [
+                {
+                    "id": "zara-spain<&>25",
+                    "value": "25",
+                    "price": 117946,
+                    "amount": 25
+                },
+                {
+                    "id": "zara-spain<&>50",
+                    "value": "50",
+                    "price": 235892,
+                    "amount": 50
+                },
+                {
+                    "id": "zara-spain<&>100",
+                    "value": "100",
+                    "price": 471783,
+                    "amount": 100
+                },
+                {
+                    "id": "zara-spain<&>150",
+                    "value": "150",
+                    "price": 707675,
+                    "amount": 150
+                },
+                {
+                    "id": "zara-spain<&>250",
+                    "value": "250",
+                    "price": 1179457,
+                    "amount": 250
+                }
+            ]
+        }
+    ]
+}
