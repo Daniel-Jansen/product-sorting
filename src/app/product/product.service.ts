@@ -31,7 +31,7 @@ export class ProductService {
 
   private handleError(error: HttpErrorResponse) {
     if (error.status === 0) {
-      console.error('There is an issue with the client or netweork: ', error.error);
+      console.error('There is an issue with the client or network: ', error.error);
     } else {
       console.error('Server-side error: ', error.error);
     }

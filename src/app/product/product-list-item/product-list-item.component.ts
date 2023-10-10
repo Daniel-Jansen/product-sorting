@@ -8,4 +8,9 @@ import { ProductInfo } from 'src/shared/models/productInfo';
 })
 export class ProductListItemComponent {
   @Input() item! : ProductInfo;
+  constructor() { }
+
+  ngOnInit(): void {
+
+  }
 }

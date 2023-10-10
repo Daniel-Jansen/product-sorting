@@ -1,9 +1,9 @@
 export class ProductInfo {
     constructor(
-        public productName : string ,
+        public name : string ,
         public country : string ,
         public categories : string ,
-        public productMax : string ,
+        public max : string ,
         public price : BigInteger ,) {
     }
 }

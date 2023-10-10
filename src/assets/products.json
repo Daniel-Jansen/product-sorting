@@ -1,7 +1,8 @@
 [
-    {"productName": "Voucher", "country": "Italy", "categories": "Game", "productMax": "1000", "price": 10},
-    {"productName": "Car", "country": "Sweden", "categories": "Vehicle", "productMax": "50", "price": 10000},
-    {"productName": "Plush", "country": "Netherlands", "categories": "Toy", "productMax": "200", "price": 30},
-    {"productName": "Laptop", "country": "Germany", "categories": "Electronic", "productMax": "5", "price": 850},
-    {"productName": "Tank", "country": "France", "categories": "Military", "productMax": "1", "price": 15000000}
+    {"name": "Voucher", "country": "Italy", "categories": "Games", "max": "1000", "price": 10},
+    {"name": "Car", "country": "Sweden", "categories": "Vehicles", "max": "10", "price": 10000},
+    {"name": "Plush", "country": "Netherlands", "categories": "Toys", "max": "200", "price": 30},
+    {"name": "Laptop", "country": "Germany", "categories": "Electronics", "max": "25", "price": 850},
+    {"name": "Tank", "country": "France", "categories": "Military", "max": "2", "price": 15000000},
+    {"name": "Mouse", "country": "Germany", "categories": "Electronics", "max": "55", "price": 15}
 ]

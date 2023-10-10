@@ -1,7 +1,7 @@
-<div>product-list works!</div>
-<ul class="product-list">
+<ul class="row row-cols-2 text-center product-list container">
     <product-list-item
     *ngFor="let item of items"
     [item]="item"
+    class="col"
     ></product-list-item>
 </ul>
