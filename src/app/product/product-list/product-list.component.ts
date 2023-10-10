@@ -7,5 +7,5 @@ import { ProductInfo } from 'src/shared/models/productInfo';
   styleUrls: ['./product-list.component.css']
 })
 export class ProductListComponent {
-  @Input() items! : ProductInfo;
+  @Input() items : ProductInfo[] = [];
 }
