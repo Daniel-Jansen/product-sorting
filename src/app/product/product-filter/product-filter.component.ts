@@ -13,6 +13,8 @@ export class ProductFilterComponent {
 
   constructor(private ProductService: ProductService) { }
 
+  // create filter with event listeners
+
   ngOnInit(): void {
     this.ProductService.getProducts().pipe(
       catchError((error: any) => {
@@ -20,8 +22,11 @@ export class ProductFilterComponent {
         throw error;
       })
     ).subscribe((data : any) => {
+      if (Array.isArray(data)) {
         this.items = data;
+      } else {
+        this.items = [data];
       }
-    );
+    });
   }
 }

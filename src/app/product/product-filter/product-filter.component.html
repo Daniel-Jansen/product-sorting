@@ -2,7 +2,8 @@
     <label for="form-select-country">Country:</label>
     <select class="form-select-country"> <!--[(ngModel)]="listFilter" (ngModelChange)="updateFilter($event)"-->
         <option value="0">-</option>
-        <option *ngFor="let item of items">{{item.country}}</option>
+        <!--fix problem for duplicate entries, make them work on the property rather than the entity-->
+        <option *ngFor="let item of items">{{item.country_name}}</option>
     </select>
 </div>
 

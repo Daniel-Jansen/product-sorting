@@ -1,8 +1,12 @@
 <li class="shadow rounded-3 p-3 mt-4 m-auto">
-    <div><span class="fw-bold">Name: </span><span>{{item.name}}</span></div>
+    <!-- <div><span class="fw-bold">Name: </span><span>{{package.id}}</span></div> -->
     <div><span class="fw-bold">Category: </span><span>{{item.categories}}</span></div>
-    <div><span class="fw-bold">Country: </span><span>{{item.country}}</span></div>
-    <div><span class="fw-bold">Price: </span><span>€{{item.price}},-</span></div>
-    <div><span class="fw-bold">In stock: </span><span *ngIf="item.max.length > 0 ; else showStock">{{item.max}}</span><ng-template #showStock>0</ng-template></div>
+    <div><span class="fw-bold">Country: </span><span>{{item.country_name}}</span></div>
+    <ul>
+        <li>
+            <div><span class="fw-bold">Price: </span><span>€{{item.packages.price}},-</span></div>
+            <div><span class="fw-bold">In stock: </span><span *ngIf="item.packages.amount.length > 0 ; else showStock">{{item.packages.amount}}</span><ng-template #showStock>0</ng-template></div>
+        </li>
+    </ul>
 </li>
-<!--todo: work on this page so the JSON data is properly shown-->
+<!--todo: change products.JSON to test-interview-data.JSON and re-do this view-->

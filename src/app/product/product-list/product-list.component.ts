@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { ProductInfo } from 'src/shared/models/productInfo';
+import { PackageInfo, ProductInfo } from 'src/shared/models/productInfo';
 import { ProductService } from '../product.service';
 import { catchError } from 'rxjs';
 
@@ -10,30 +10,22 @@ import { catchError } from 'rxjs';
 })
 export class ProductListComponent {
   @Input() items : ProductInfo[] = [];
+  @Input() packages : PackageInfo[] = [];
 
-  constructor(private productService: ProductService) {
-
-  }
+  constructor(private productService: ProductService) { }
   
   ngOnInit(): void {
-    // uses soon-to-be depricated method with .subscribe
-    // this.productService.getProducts().subscribe(
-    //   (data : any) => {
-    //     this.items = data;
-    //   },
-    //   (error : any) => {
-    //     alert(error.message);
-    //   },
-    // );
-
     this.productService.getProducts().pipe(
-      catchError((error: any) => {
+      catchError((error : any) => {
         alert(error.message);
         throw error;
       })
     ).subscribe((data : any) => {
+      if (Array.isArray(data)) {
         this.items = data;
+      } else {
+        this.items = [data];
       }
-    );
+    });
   }
 }

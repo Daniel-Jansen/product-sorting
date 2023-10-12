@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpErrorResponse, HttpHeaders, HttpParams } from '@angular/common/http';
 import { catchError, throwError } from 'rxjs';
+import { ProductInfo } from 'src/shared/models/productInfo';
 
 @Injectable({
   providedIn: 'root'
@@ -26,7 +27,7 @@ export class ProductService {
       }
     });
 
-    return this.http.get('assets/products.json', options).pipe(catchError(this.handleError));
+    return this.http.get<ProductInfo[]>('assets/test-interview-data.json', options).pipe(catchError(this.handleError));
   }
 
   private handleError(error: HttpErrorResponse) {
