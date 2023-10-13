@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { PackageInfo, ProductInfo } from 'src/shared/models/productInfo';
+import { ProductInfo } from 'src/shared/models/productInfo';
 import { ProductService } from '../product.service';
 import { catchError } from 'rxjs';
 
@@ -11,9 +11,7 @@ import { catchError } from 'rxjs';
 export class ProductListItemComponent {
   @Input() item! : ProductInfo;
 
-  constructor(private productService: ProductService) { 
-    
-  }
+  constructor(private productService: ProductService) { }
 
   ngOnInit(): void {
     this.productService.getProducts().pipe(

@@ -27,6 +27,7 @@ export class ProductService {
       }
     });
 
+    // change the file to an URL from yarle website with a basic auth token
     return this.http.get<ProductInfo[]>('assets/test-interview-data.json', options).pipe(catchError(this.handleError));
   }
 

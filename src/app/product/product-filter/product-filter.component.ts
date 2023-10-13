@@ -28,5 +28,6 @@ export class ProductFilterComponent {
         this.items = [data];
       }
     });
+    console.log(this.items)
   }
 }
