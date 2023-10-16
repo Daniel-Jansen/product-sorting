@@ -1,6 +1,6 @@
 <div class="mt-2">
     <label for="form-select-country">Country:</label>
-    <select class="form-select-country"> <!--[(ngModel)]="listFilter" (ngModelChange)="updateFilter($event)"-->
+    <select id="form-select-country" class="form-select-country"> <!--[(ngModel)]="listFilter" (ngModelChange)="updateFilter($event)"-->
         <option value="0">-</option>
         <!--fix problem for duplicate entries, make them work on the property rather than the entity-->
         <option *ngFor="let item of items">{{item.country_name}}</option>
@@ -8,8 +8,8 @@
 </div>
 
 <div class="mt-2">
-    <label for="form-select-country">Category:</label>
-    <select class="form-select-categories"> <!--[(ngModel)]="listFilter" (ngModelChange)="updateFilter($event)"-->
+    <label for="form-select-categories">Category:</label>
+    <select id="form-select-categories" class="form-select-categories"> <!--[(ngModel)]="listFilter" (ngModelChange)="updateFilter($event)"-->
         <option value="0">-</option>
         <option *ngFor="let item of items">{{item.categories}}</option>
     </select>

@@ -9,7 +9,7 @@ import { catchError } from 'rxjs';
   styleUrls: ['./product-list-item.component.css']
 })
 export class ProductListItemComponent {
-  @Input() item! : ProductInfo;
+  @Input() item: any;
 
   constructor(private productService: ProductService) { }
 

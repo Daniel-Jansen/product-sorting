@@ -1,16 +1,16 @@
 export class ProductInfo {
     constructor(
+        public name : string ,
         public country_name : string ,
         public currency: string ,
         public categories : string[] ,
-        public packages : PackageInfo ,
+        public packages : RangeInfo ,
     ) {  }
 }
 
-export class PackageInfo {
+export class RangeInfo {
     constructor(
-        public id : string ,
-        public price : BigInteger ,
-        public amount : string ,
+        public max : number ,
+        public test : string ,
     ) {  }
 }

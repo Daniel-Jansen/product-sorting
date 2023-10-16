@@ -2,6 +2,7 @@ import { Injectable } from '@angular/core';
 import { HttpClient, HttpErrorResponse, HttpHeaders, HttpParams } from '@angular/common/http';
 import { catchError, throwError } from 'rxjs';
 import { ProductInfo } from 'src/shared/models/productInfo';
+import { JsonPipe } from '@angular/common';
 
 @Injectable({
   providedIn: 'root'
@@ -14,6 +15,7 @@ export class ProductService {
     return {
       headers: new HttpHeaders({
         'Content-Type': 'application/json',
+        'Authorization': 'Basic cGlPNVNHVWRIeUdhNzcxdzpPbEZuUEhWRnJ4NWJJN2lK'
       })
     };
   }
@@ -27,8 +29,10 @@ export class ProductService {
       }
     });
 
-    // change the file to an URL from yarle website with a basic auth token
-    return this.http.get<ProductInfo[]>('assets/test-interview-data.json', options).pipe(catchError(this.handleError));
+    return this.http.get<any>('assets/test-interview-data.json', options).pipe(catchError(this.handleError));
+
+    // The correct route for yarle website with auth code, but it doesn't work because of CORS
+    // return this.http.get<ProductInfo[]>('https://yarle.com/test-interview-data', options).pipe(catchError(this.handleError));
   }
 
   private handleError(error: HttpErrorResponse) {

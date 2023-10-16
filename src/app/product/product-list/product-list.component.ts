@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { PackageInfo, ProductInfo } from 'src/shared/models/productInfo';
+import { ProductInfo } from 'src/shared/models/productInfo';
 import { ProductService } from '../product.service';
 import { catchError } from 'rxjs';
 
@@ -9,8 +9,7 @@ import { catchError } from 'rxjs';
   styleUrls: ['./product-list.component.css']
 })
 export class ProductListComponent {
-  @Input() items : ProductInfo[] = [];
-  @Input() packages : PackageInfo[] = [];
+  @Input() items : any[] = [];
 
   constructor(private productService: ProductService) { }
   
