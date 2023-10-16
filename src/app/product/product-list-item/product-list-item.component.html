@@ -1,9 +1,7 @@
 <li class="shadow rounded-3 p-3 mt-4 m-auto">
-    <div><span class="fw-bold">Name: </span><span>{{item?.data[0].name}}</span></div>
-    <div><span class="fw-bold">Country: </span><span>{{item?.data[0].country_name}}</span></div>
-    <div><span class="fw-bold">Currency: </span><span>{{item?.data[0].currency}}</span></div>
-    <div><span class="fw-bold">Category: </span><span>{{item?.data[0].categories}}</span></div>
-    <div><span class="fw-bold">Max value: </span><span *ngIf="item?.data[0].range?.max != undefined else showStock">{{item?.data[0].range.max}}</span><ng-template #showStock>-</ng-template></div>
-    <!-- <div><span class="fw-bold">test: </span><span>{{item?.data[1].range.test}}</span></div> -->
+    <div><span class="fw-bold">Name: </span><span>{{item.name}}</span></div>
+    <div><span class="fw-bold">Country: </span><span>{{item.country_name}}</span></div>
+    <div><span class="fw-bold">Currency: </span><span>{{item.currency}}</span></div>
+    <div><span class="fw-bold">Category: </span><span>{{item.categories}}</span></div>
+    <div><span class="fw-bold">Max value: </span><span *ngIf="item.range?.max != undefined else showStock">{{item.range.max}}</span><ng-template #showStock>-</ng-template></div>
 </li>
-<!--todo: refurbish this view to correct data in the right way-->

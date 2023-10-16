@@ -15,7 +15,7 @@ export class ProductService {
     return {
       headers: new HttpHeaders({
         'Content-Type': 'application/json',
-        'Authorization': 'Basic cGlPNVNHVWRIeUdhNzcxdzpPbEZuUEhWRnJ4NWJJN2lK'
+        'Authorization': ''
       })
     };
   }

@@ -11,6 +11,5 @@ export class ProductInfo {
 export class RangeInfo {
     constructor(
         public max : number ,
-        public test : string ,
     ) {  }
 }

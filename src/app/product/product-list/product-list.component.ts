@@ -1,5 +1,4 @@
 import { Component, Input } from '@angular/core';
-import { ProductInfo } from 'src/shared/models/productInfo';
 import { ProductService } from '../product.service';
 import { catchError } from 'rxjs';
 
@@ -20,11 +19,16 @@ export class ProductListComponent {
         throw error;
       })
     ).subscribe((data : any) => {
-      if (Array.isArray(data)) {
+      if (data.data && Array.isArray(data.data)) {
+        this.items = data.data;
+      } else if (Array.isArray(data)) {
         this.items = data;
       } else {
         this.items = [data];
       }
+
+      console.log(this.items);
+      console.log(data);
     });
   }
 }
