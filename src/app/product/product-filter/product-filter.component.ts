@@ -1,5 +1,4 @@
 import { Component, Input } from '@angular/core';
-import { ProductInfo } from 'src/shared/models/productInfo';
 import { ProductService } from '../product.service';
 import { catchError } from 'rxjs';
 
@@ -9,24 +8,58 @@ import { catchError } from 'rxjs';
   styleUrls: ['./product-filter.component.css']
 })
 export class ProductFilterComponent {
-  @Input() items : ProductInfo[] = [];
+  @Input() items : any;
+  uniqueCountries: string[] = [];
+  uniqueCategories: string[] = [];
+  listFilter : string = '';
 
-  constructor(private ProductService: ProductService) { }
+  constructor(private productService: ProductService) { }
 
-  // create filter with event listeners
+  filterChanged(value: any) {
+    console.log(value);
+  }
 
   ngOnInit(): void {
-    this.ProductService.getProducts().pipe(
-      catchError((error: any) => {
+    this.productService.getProducts().pipe(
+      catchError((error : any) => {
         alert(error.message);
         throw error;
       })
     ).subscribe((data : any) => {
-      if (Array.isArray(data)) {
+      if (data.data && Array.isArray(data.data)) {
+        this.items = data.data;
+      } else if (Array.isArray(data)) {
         this.items = data;
       } else {
         this.items = [data];
       }
+      this.extractUniqueCountryNames();
+      this.extractUniqueCategories();
     });
+  }
+
+  private extractUniqueCountryNames() {
+    this.items.forEach((item: any) => {
+      if (!this.uniqueCountries.includes(item.country_name)) {
+        this.uniqueCountries.push(item.country_name);
+      }
+    });
+
+    this.uniqueCountries.sort();
+    console.log(this.uniqueCountries);
+  }
+
+  private extractUniqueCategories() {
+    const allCategories: string[] = [];
+
+    this.items.forEach((item: any) => {
+      item.categories.forEach((category: string) => {
+        if (!allCategories.includes(category))
+        allCategories.push(category);
+      });
+    });
+
+    this.uniqueCategories = allCategories.sort();
+    console.log(this.uniqueCategories);
   }
 }

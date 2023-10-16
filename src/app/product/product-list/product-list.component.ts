@@ -26,9 +26,6 @@ export class ProductListComponent {
       } else {
         this.items = [data];
       }
-
-      console.log(this.items);
-      console.log(data);
     });
   }
 }

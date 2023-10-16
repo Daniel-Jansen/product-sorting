@@ -1,8 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpErrorResponse, HttpHeaders, HttpParams } from '@angular/common/http';
 import { catchError, throwError } from 'rxjs';
-import { ProductInfo } from 'src/shared/models/productInfo';
-import { JsonPipe } from '@angular/common';
 
 @Injectable({
   providedIn: 'root'

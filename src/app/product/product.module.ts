@@ -5,6 +5,8 @@ import { ProductListItemComponent } from './product-list-item/product-list-item.
 import { ProductFilterComponent } from './product-filter/product-filter.component';
 import { ProductComponent } from './product.component';
 import { HttpClientModule } from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
+
 
 
 
@@ -18,6 +20,7 @@ import { HttpClientModule } from '@angular/common/http';
   imports: [
     CommonModule,
     HttpClientModule,
+    FormsModule,
   ],
   exports: [
     ProductComponent
