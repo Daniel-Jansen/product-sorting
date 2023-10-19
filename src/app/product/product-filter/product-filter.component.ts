@@ -1,43 +1,41 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, Output, EventEmitter } from '@angular/core';
 import { ProductService } from '../product.service';
-import { catchError } from 'rxjs';
+import { ProductInfo } from 'src/shared/models/productInfo';
+
+const filters = [
+  (item: ProductInfo) => item,
+  (item: ProductInfo) => item.country_name.includes('France'),
+  (item: ProductInfo) => item.country_name.includes('Spain'),
+];
 
 @Component({
   selector: 'product-filter',
   templateUrl: './product-filter.component.html',
-  styleUrls: ['./product-filter.component.css']
+  styleUrls: ['./product-filter.component.css'],
 })
 export class ProductFilterComponent {
-  @Input() items : any;
+  @Input() items: any;
+  @Input() filter: any;
+  @Output() filterChange = new EventEmitter<any>();
   uniqueCountries: string[] = [];
   uniqueCategories: string[] = [];
-  listFilter : string = '';
+  listFilter: string = 'All';
 
-  constructor(private productService: ProductService) { }
+  constructor(private productService: ProductService) {}
 
   filterChanged(value: any) {
-    console.log(value);
+    console.log('Selected Country:', value);
+    this.filter = filters[value];
+    this.filterChange.emit(this.filter);
   }
 
   ngOnInit(): void {
-    this.productService.getProducts().pipe(
-      catchError((error : any) => {
-        alert(error.message);
-        throw error;
-      })
-    ).subscribe((data : any) => {
-      if (data.data && Array.isArray(data.data)) {
-        this.items = data.data;
-      } else if (Array.isArray(data)) {
-        this.items = data;
-      } else {
-        this.items = [data];
-      }
-      this.extractUniqueCountryNames();
-      this.extractUniqueCategories();
-    });
+    this.extractUniqueCountryNames();
+    this.extractUniqueCategories();
+    this.filterChanged('');
   }
 
+  // extracts unique country names from the items array
   private extractUniqueCountryNames() {
     this.items.forEach((item: any) => {
       if (!this.uniqueCountries.includes(item.country_name)) {
@@ -49,17 +47,16 @@ export class ProductFilterComponent {
     console.log(this.uniqueCountries);
   }
 
+  // extracts unique categories from the items array
   private extractUniqueCategories() {
-    const allCategories: string[] = [];
-
     this.items.forEach((item: any) => {
       item.categories.forEach((category: string) => {
-        if (!allCategories.includes(category))
-        allCategories.push(category);
+        if (!this.uniqueCategories.includes(category))
+          this.uniqueCategories.push(category);
       });
     });
 
-    this.uniqueCategories = allCategories.sort();
+    this.uniqueCategories.sort();
     console.log(this.uniqueCategories);
   }
 }

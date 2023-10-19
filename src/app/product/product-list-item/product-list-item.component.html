@@ -1,7 +1,21 @@
 <li class="shadow rounded-3 p-3 mt-4 m-auto">
-    <div><span class="fw-bold">Name: </span><span>{{item.name}}</span></div>
-    <div><span class="fw-bold">Country: </span><span>{{item.country_name}}</span></div>
-    <div><span class="fw-bold">Currency: </span><span>{{item.currency}}</span></div>
-    <div><span class="fw-bold">Category: </span><span>{{item.categories}}</span></div>
-    <div><span class="fw-bold">Max value: </span><span *ngIf="item.range?.max != undefined else showStock">{{item.range.max}}</span><ng-template #showStock>-</ng-template></div>
+  <div>
+    <span class="fw-bold">Name: </span><span>{{ item.name }}</span>
+  </div>
+  <div>
+    <span class="fw-bold">Country: </span><span>{{ item.country_name }}</span>
+  </div>
+  <div>
+    <span class="fw-bold">Currency: </span><span>{{ item.currency }}</span>
+  </div>
+  <div>
+    <span class="fw-bold">Category: </span><span>{{ item.categories }}</span>
+  </div>
+  <div>
+    <span class="fw-bold">Max value: </span
+    ><span *ngIf="item.range?.max != undefined; else showStock">{{
+      item.range.max
+    }}</span
+    ><ng-template #showStock>-</ng-template>
+  </div>
 </li>

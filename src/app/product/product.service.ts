@@ -3,18 +3,17 @@ import { HttpClient, HttpErrorResponse, HttpHeaders, HttpParams } from '@angular
 import { catchError, throwError } from 'rxjs';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class ProductService {
+  constructor(private http: HttpClient) {}
 
-  constructor(private http: HttpClient) { }
-
-  private getStandardOptions() : any {
+  private getStandardOptions(): any {
     return {
       headers: new HttpHeaders({
         'Content-Type': 'application/json',
-        'Authorization': ''
-      })
+        Authorization: '',
+      }),
     };
   }
 
@@ -23,11 +22,13 @@ export class ProductService {
 
     options.params = new HttpParams({
       fromObject: {
-        format: 'json'
-      }
+        format: 'json',
+      },
     });
 
-    return this.http.get<any>('assets/test-interview-data.json', options).pipe(catchError(this.handleError));
+    return this.http
+      .get<any>('assets/test-interview-data.json', options)
+      .pipe(catchError(this.handleError));
 
     // The correct route for yarle website with auth code, but it doesn't work because of CORS
     // return this.http.get<ProductInfo[]>('https://yarle.com/test-interview-data', options).pipe(catchError(this.handleError));
@@ -35,12 +36,17 @@ export class ProductService {
 
   private handleError(error: HttpErrorResponse) {
     if (error.status === 0) {
-      console.error('There is an issue with the client or network: ', error.error);
+      console.error(
+        'There is an issue with the client or network: ',
+        error.error
+      );
     } else {
       console.error('Server-side error: ', error.error);
     }
 
-
-    return throwError(() => new Error('Cannot retrieve wishes from the server. Please try again'))
+    return throwError(
+      () =>
+        new Error('Cannot retrieve wishes from the server. Please try again')
+    );
   }
 }

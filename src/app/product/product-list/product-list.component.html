@@ -1,13 +1,13 @@
 <div *ngIf="items.length === 0; else showItems">
-    There are no products to display.
+  There are no products to display.
 </div>
 
 <ng-template #showItems>
-    <ul class="container row row-cols-2 text-center product-list">
-        <product-list-item
-        *ngFor="let item of items"
-        [item]="item"
-        class="col"
-        ></product-list-item>
-    </ul>
+  <ul class="container row row-cols-2 text-center product-list">
+    <product-list-item
+      *ngFor="let item of items"
+      [item]="item"
+      class="col"
+    ></product-list-item>
+  </ul>
 </ng-template>
