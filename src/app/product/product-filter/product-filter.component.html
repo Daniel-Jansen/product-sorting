@@ -1,9 +1,9 @@
-<div class="mt-2">
+<div class="mt-2 d-flex">
   <label for="form-select-country">Country:</label>
   <select
     id="form-select-country"
-    class="form-select-country ms-2"
-    [(ngModel)]="listFilter"
+    class="form-select-country ms-2 w-100"
+    [(ngModel)]="listFilterCountry"
     (ngModelChange)="filterChanged($event)"
   >
     <option value="All">All</option>
@@ -13,10 +13,15 @@
   </select>
 </div>
 
-<div class="mt-2">
+<div class="mt-2 d-flex">
   <label for="form-select-categories">Category:</label>
-  <select id="form-select-categories" class="form-select-categories ms-2">
-    <option value="0">All</option>
+  <select 
+    id="form-select-categories" 
+    class="form-select-categories ms-2 w-100" 
+    [(ngModel)]="listFilterCategory"
+    (ngModelChange)="filterChanged($event)"
+  >
+    <option value="All">All</option>
     <option *ngFor="let categories of uniqueCategories">
       {{ categories | titlecase }}
     </option>

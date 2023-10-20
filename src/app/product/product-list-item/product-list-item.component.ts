@@ -9,4 +9,10 @@ export class ProductListItemComponent {
   @Input() item: any;
 
   constructor() {}
+
+  // formats the categories array to make it look more readable
+  formatCategories(categories: string[]): string {
+    return categories.join(', ');
+  }
+
 }

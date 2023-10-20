@@ -9,13 +9,11 @@
     <span class="fw-bold">Currency: </span><span>{{ item.currency }}</span>
   </div>
   <div>
-    <span class="fw-bold">Category: </span><span>{{ item.categories }}</span>
+    <span class="fw-bold">Category: </span><span>{{ formatCategories(item.categories) | titlecase }}</span>
   </div>
   <div>
-    <span class="fw-bold">Max value: </span
-    ><span *ngIf="item.range?.max != undefined; else showStock">{{
-      item.range.max
-    }}</span
-    ><ng-template #showStock>-</ng-template>
+    <span class="fw-bold">Max value: </span>
+    <span *ngIf="item.range?.max != undefined; else showStock">{{ item.range.max }}</span>
+    <ng-template #showStock>-</ng-template>
   </div>
 </li>

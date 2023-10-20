@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, Output, EventEmitter } from '@angular/core';
 import { ProductService } from './product.service';
 import { catchError } from 'rxjs';
 
@@ -9,10 +9,16 @@ import { catchError } from 'rxjs';
 })
 export class ProductComponent {
   @Input() items: any[] = [];
+  @Input() filteredItems: any[] = [];
 
   constructor(private productService: ProductService) {}
 
+  updateFilteredItems(filteredItems: any[]) {
+    this.filteredItems = filteredItems;
+  }
+
   ngOnInit(): void {
+    // calls upon the service to get the products which is then shared throughout all components
     this.productService
       .getProducts()
       .pipe(
@@ -31,5 +37,4 @@ export class ProductComponent {
         }
       });
   }
-  filter: any;
 }
