@@ -14,5 +14,4 @@ export class ProductListItemComponent {
   formatCategories(categories: string[]): string {
     return categories.join(', ');
   }
-
 }
