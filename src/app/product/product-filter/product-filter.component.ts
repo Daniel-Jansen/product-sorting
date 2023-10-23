@@ -8,16 +8,18 @@ import { Component, Input, Output, EventEmitter } from '@angular/core';
 export class ProductFilterComponent {
   @Input() items: any[] = [];
   @Output() filteredItems = new EventEmitter<any>();
+
   uniqueCountries: string[] = [];
   uniqueCategories: string[] = [];
+
+  // sets the default to 'All'
   listFilterCountry: string = 'All';
   listFilterCategory: string = 'All';
 
   constructor() {}
 
+  // emits the filtered items to parent
   filterChanged(any: any) {
-    console.log('Selected Country:', this.listFilterCountry);
-    console.log('Selected Category:', this.listFilterCategory);
     const filteredItems = this.items.filter(this.filterCriteria());
     this.filteredItems.emit(filteredItems);
   }
@@ -32,7 +34,8 @@ export class ProductFilterComponent {
 
   // the filter check function
   public filterCriteria() {
-    return (item: any) => {
+    return (items: any) => {
+      const filterCategoryLower = this.listFilterCategory.toLowerCase();
       // if the filter is set to 'All', returns all items
       if (this.listFilterCountry === 'All' && this.listFilterCategory === 'All')
         return true;
@@ -42,7 +45,7 @@ export class ProductFilterComponent {
         this.listFilterCountry !== 'All' &&
         this.listFilterCategory === 'All'
       ) {
-        return item.country_name === this.listFilterCountry&&console.log(item);
+        return items.country_name === this.listFilterCountry;
       }
 
       // if the filter is set to 'All' for country and a category, returns all items from that category
@@ -50,7 +53,9 @@ export class ProductFilterComponent {
         this.listFilterCountry === 'All' &&
         this.listFilterCategory !== 'All'
       ) {
-        return item.categories.includes(this.listFilterCategory)&&console.log(item);
+        return items.categories.some(
+          (category: string) => category.toLowerCase() === filterCategoryLower
+        );
       }
 
       // if the filter is set to a country and a category, returns all items from that country and category
@@ -59,14 +64,16 @@ export class ProductFilterComponent {
         this.listFilterCategory !== 'All'
       ) {
         return (
-          item.country_name === this.listFilterCountry &&
-          item.categories.includes(this.listFilterCategory)&&console.log(item)
+          items.country_name === this.listFilterCountry &&
+          items.categories.some(
+            (category: string) => category.toLowerCase() === filterCategoryLower
+          )
         );
       }
     };
   }
 
-  // extracts unique country names from the items array
+  // extracts unique country names
   private extractUniqueCountryNames() {
     this.items.forEach((item: any) => {
       if (!this.uniqueCountries.includes(item.country_name)) {
@@ -75,10 +82,9 @@ export class ProductFilterComponent {
     });
 
     this.uniqueCountries.sort();
-    console.log(this.uniqueCountries);
   }
 
-  // extracts unique categories from the items array
+  // extracts unique categories
   private extractUniqueCategories() {
     this.items.forEach((item: any) => {
       item.categories.forEach((category: string) => {
@@ -88,6 +94,5 @@ export class ProductFilterComponent {
     });
 
     this.uniqueCategories.sort();
-    console.log(this.uniqueCategories);
   }
 }

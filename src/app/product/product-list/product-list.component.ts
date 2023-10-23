@@ -10,4 +10,6 @@ export class ProductListComponent {
 
   constructor() {}
 
+  ngOnInit(): void {
+  }
 }

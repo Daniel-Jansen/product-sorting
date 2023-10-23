@@ -13,6 +13,7 @@ export class ProductComponent {
 
   constructor(private productService: ProductService) {}
 
+  // updates the filtered items when selector is changed
   updateFilteredItems(filteredItems: any[]) {
     this.filteredItems = filteredItems;
   }
