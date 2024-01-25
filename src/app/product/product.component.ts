@@ -7,14 +7,15 @@ import { catchError } from 'rxjs';
   templateUrl: './product.component.html',
   styleUrls: ['./product.component.css'],
 })
+
 export class ProductComponent {
-  @Input() items: any[] = [];
-  @Input() filteredItems: any[] = [];
+  @Input() items: Product[] = [];
+  @Input() filteredItems: Product[] = [];
 
   constructor(private productService: ProductService) {}
 
   // updates the filtered items when selector is changed
-  updateFilteredItems(filteredItems: any[]) {
+  updateFilteredItems(filteredItems: Product[]) {
     this.filteredItems = filteredItems;
   }
 
@@ -28,14 +29,20 @@ export class ProductComponent {
           throw error;
         })
       )
-      .subscribe((data: any) => {
-        if (data.data && Array.isArray(data.data)) {
-          this.items = data.data;
-        } else if (Array.isArray(data)) {
-          this.items = data;
-        } else {
-          this.items = [data];
-        }
+      .subscribe((data: Product[]) => {
+        this.items = data;
       });
   }
+}
+
+export interface Product {
+  name: string;
+  country_name: string;
+  currency: string;
+  categories: string[];
+  packages: RangeInfo;
+}
+
+export interface RangeInfo {
+  max: number;
 }
